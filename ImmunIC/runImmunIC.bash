@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bash file to run ImmunIC
+# Bash script to run ImmunIC
 # Usage: bash runImmunIC.bash input_csv_file
 
 inputfile=$1
