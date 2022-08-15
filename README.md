@@ -5,7 +5,12 @@ ImmunIC (Immune cell Identifier and Classifier) is a tool for immune cell identi
 An input example, pbmc_test.csv, is a raw gene count matrix of 10 peripheral blood mononuclear cells (PBMCs) ([GSE158055](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE158055)). The output is ImmunIC_pbmc_test.csv.
 
 ## Using Docker
-The ImmunIC pipeline with all code requirements is provided as a [Docker file](https://github.com/hayounlee-lab/ImmunIC/blob/main/Dockerfile). After creating the Docker image, you can run ImmunIC with the following command:
+The ImmunIC pipeline with all code requirements is provided as a [Docker file](https://github.com/hayounlee-lab/ImmunIC/blob/main/Dockerfile). 
+``
+docker build -t immunic:latest - < Dockerfile
+``
+
+After creating the Docker image, you can run ImmunIC with the following command:
 ``
 docker run -v $(pwd):$(pwd) --rm immunic:latest $(pwd)/pbmc_test.csv
 ``
