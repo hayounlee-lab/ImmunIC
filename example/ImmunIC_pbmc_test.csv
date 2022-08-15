@@ -1,0 +1,11 @@
+Cell_Index,Cell_Type,Maximum_Correlation_Coefficient,Total_Immune_Gene_Expression
+PBMC1,Monocyte,0.42,268.1
+PBMC2,B_cell,0.22,146.8
+PBMC3,B_cell,0.32,407.5
+PBMC4,Monocyte,0.4,256.6
+PBMC5,B_cell,0.3,294.8
+PBMC6,B_cell,0.25,272.8
+PBMC7,Monocyte,0.42,295.4
+PBMC8,B_cell,0.29,279.9
+PBMC9,CD4T_cell,0.29,254.5
+PBMC10,Monocyte,0.5,273.5
