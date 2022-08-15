@@ -8,5 +8,6 @@ if [ ! -f $1 ]; then
    exit
 fi
 
-python3 xgboost-cd4cd8Tcells.py $inputfile
-python3 ImmunIC.py $inputfile
+immunic_path=`dirname "$(realpath $0)"`
+python3 $immunic_path/xgboost-cd4cd8Tcells.py $inputfile
+python3 $immunic_path/ImmunIC.py $inputfile
