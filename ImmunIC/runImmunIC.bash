@@ -8,5 +8,5 @@ if [ ! -f $1 ]; then
    exit
 fi
 
-python3 /root/ImmunIC/xgboost-cd4cd8Tcells.py $inputfile
-python3 /root/ImmunIC/ImmunIC.py $inputfile
+python3 xgboost-cd4cd8Tcells.py $inputfile
+python3 ImmunIC.py $inputfile
