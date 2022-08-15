@@ -3,8 +3,9 @@
 # Usage: bash runImmunIC.bash input_csv_file
 
 inputfile=$1
-if [ ! -f $1 ]; then
-   echo $1" not found"
+
+if [ ! -f $inputfile ]; then
+   echo $inputfile "not found"
    exit
 fi
 
