@@ -109,7 +109,7 @@ with open(os.path.join(outputpath,outputfile),"w") as fout:
                 if 'MYNU' in celltype : celltype='Neutrophil'
                 if 'MYMS' in celltype or 'MYEO' in celltype: celltype='Other_Myeloid_cell'
                 if 'CD' in celltype:
-                    if cd4[col]=='0': celltype='CD4T_cell'
+                    if cd4[col.strip()]=='0': celltype='CD4T_cell'
                     else: celltype='CD8T_cell'
 
           print(col,celltype,round(maximum_corr,2),round(SUM,1),sep=',',file=fout)
